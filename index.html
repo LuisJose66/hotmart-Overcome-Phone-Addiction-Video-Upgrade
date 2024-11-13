@@ -80,7 +80,21 @@
                 <p class="bold" style="color: #C30003; font-size: 18px">Today
                   Only: $17.00!</p>
               </div>
-              <div class="button"> <img src="images/add-to-cart-gold.png"> </div>
+              <div class="button"> 
+                <script type="text/javascript">
+                  function importHotmart(){ 
+                     var imported = document.createElement('script'); 
+                     imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+                     document.head.appendChild(imported); 
+                    var link = document.createElement('link'); 
+                    link.rel = 'stylesheet'; 
+                    link.type = 'text/css'; 
+                    link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+                    document.head.appendChild(link);	} 
+                   importHotmart(); 
+                 </script> 
+                 <a onclick="return false;" href="https://pay.hotmart.com/E96543245O?checkoutMode=2" class="hotmart-fb hotmart__button-checkout"><img src='https://static.hotmart.com/img/btn-buy-green.png'></a>   
+              </div>
             </div>
           </div>
           <div class="mostPop">
